@@ -7,7 +7,7 @@ export default function Drum(props) {
         <div
             id={'drum' + props.pad.name}
             className="drum-pad d-flex align-items-center justify-content-center rounded"
-            onMouseDown={(e) => {
+            onClick={(e) => {
                 console.log('propsy: ', props)
                 props.handleClick(props.pad.name, e.target)
             }}
