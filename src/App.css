@@ -1,8 +1,50 @@
 .App {
   text-align: center;
-  background-color: bisque;
 }
 
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+.flux {
+  font-family: neon;
+  color: #426DFB;
+}
+.flux {
+  animation: flux 2s linear infinite;
+  -moz-animation: flux 2s linear infinite;
+  -webkit-animation: flux 2s linear infinite;
+  -o-animation: flux 2s linear infinite;
+}
+
+@keyframes flux {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+    color: #28D7FE;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+    color: #146C80;
+  }
+}
+
+#display {
+  min-height: 100px;
+  min-width: 300px;
+  color: rgb(121, 245, 6);
+}
+.drum-pad {
+  border: solid black;
+  width:100px;
+  height:100px;
+  background-color: rgb(78, 156, 0);
+}
+
+.drum-pad-clicked {
+  background-color:  rgb(121, 245, 6);
+}
 
 @keyframes App-logo-spin {
   from {
@@ -12,3 +54,9 @@
     transform: rotate(360deg);
   }
 }
+
+footer{
+  color: green;
+  text-shadow: -1px -1px 8px greenyellow;
+}
+
